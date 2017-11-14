@@ -4,7 +4,6 @@
     int float_num=0;
     int id_num=0;
     int error_num=0;
-
 %}
 %option noyywrap
 %%
