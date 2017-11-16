@@ -7,11 +7,11 @@
 %}
 %option noyywrap
 %%
-[0-9]+; {
+[-]*[0-9]+; {
     printf("Integer (%s)\n",yytext);
     int_num++;
 }
-[0-9]*\.[0-9]+; {
+[-]*[0-9]*\.[0-9]+; {
     printf("Float (%s)\n",yytext);
     float_num++;
 }

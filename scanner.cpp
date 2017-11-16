@@ -12,11 +12,11 @@ int main(){
     int id_num=0;
     int error_num=0;
     while(cin>>str){
-        if(regex_match(str,regex("[0-9]+;"))){
+        if(regex_match(str,regex("[-]*[0-9]+;"))){
             cout<<"Integer"<<" ("<<str<<")"<<endl;
             int_num++;
         }
-        else if(regex_match(str,regex("[0-9]*.[0-9]+;"))){
+        else if(regex_match(str,regex("[-]*[0-9]*.[0-9]+;"))){
             cout<<"Float"<<" ("<<str<<")"<<endl;
             float_num++;
         }
